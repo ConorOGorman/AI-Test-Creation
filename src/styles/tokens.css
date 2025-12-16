@@ -1,0 +1,25 @@
+:root {
+  /* Colors */
+  --color-primary-black: #2f2f2f;
+  --color-primary-white: #ffffff;
+  --color-border-light: #d3d3d3;
+  --color-bg-light: #f3f3f3;
+  --color-error: red;
+  --color-success: green;
+  --color-overlay-dark: rgba(0, 0, 0, 0.2);
+
+  /* Typography */
+  --font-family-silka: var(--font-silka);
+  
+  /* Spacing */
+  --spacing-desktop: 35px;
+  --spacing-tablet: 25px;
+  --spacing-mobile: 15px;
+  
+  --container-max-width: 1500px;
+
+  /* Transitions */
+  --transition-standard: 0.3s ease-out;
+  --transition-slow: 0.6s cubic-bezier(0, 0, 0.26, 1);
+  --transition-menu: 0.7s cubic-bezier(0.56, 0, 0.38, 1);
+}

@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@import "../styles/tokens.css";
+
+@theme {
+  --color-primary-black: var(--color-primary-black);
+  --color-primary-white: var(--color-primary-white);
+  --color-border-light: var(--color-border-light);
+  --color-bg-light: var(--color-bg-light);
+  
+  --font-silka: var(--font-family-silka);
+}
+
+body {
+  background: var(--color-primary-white);
+  color: var(--color-primary-black);
+  font-family: var(--font-family-silka);
+  margin: 0;
+  padding: 0;
+}
