@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "next lint",
     "forensics": "node scripts/forensics.js",
-    "screenshot-compare": "node scripts/screenshot-compare.js"
+    "screenshot-compare": "node scripts/screenshot-compare.js",
+    "screenshot-compare:kitchens": "node scripts/screenshot-compare-kitchens.js"
   },
   "keywords": [],
   "author": "",
