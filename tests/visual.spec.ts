@@ -48,14 +48,6 @@ test('generate visual parity report', async ({ page }) => {
         const img1 = PNG.sync.read(fs.readFileSync(refPath));
         const img2 = PNG.sync.read(fs.readFileSync(buildPath));
         
-        // Use the larger dimensions to contain both
-        const maxWidth = Math.max(img1.width, img2.width);
-        const maxHeight = Math.max(img1.height, img2.height);
-        
-        // If dimensions differ, we can't use pixelmatch directly on the buffers.
-        // We would need to resize or crop. For now, we only compare if dimensions match exactly
-        // or we just log the difference.
-        
         if (img1.width === img2.width && img1.height === img2.height) {
             const diff = new PNG({ width: img1.width, height: img1.height });
             const numDiffPixels = pixelmatch(img1.data, img2.data, diff.data, img1.width, img1.height, { threshold: 0.1 });

@@ -7,7 +7,7 @@ const VideoBackground = memo(() => (
     <div className="absolute inset-0 bg-black/20 z-10"></div>
     <iframe 
       src="https://player.vimeo.com/video/1140325670?dnt=1&color=fff&title=0&byline=0&loop=1&muted=1&autoplay=1&autopause=0&background=1" 
-      className="absolute top-1/2 left-1/2 w-[100vw] h-[100vh] -translate-x-1/2 -translate-y-1/2 pointer-events-none min-w-full min-h-full object-cover"
+      className="absolute top-1/2 left-1/2 w-screen h-screen -translate-x-1/2 -translate-y-1/2 pointer-events-none min-w-full min-h-full object-cover"
       frameBorder="0" 
       allow="autoplay; fullscreen; picture-in-picture"
       style={{ width: '100vw', height: '56.25vw', minHeight: '100vh', minWidth: '177.77vh' }}
@@ -33,7 +33,7 @@ export default function Hero() {
       {/* Background Video */}
       <VideoBackground />
       
-      <div className="relative z-10 text-center flex flex-col items-center w-full max-w-[1500px] px-[35px]">
+      <div className="relative z-10 text-center flex flex-col items-center w-full max-w-375 px-8.75">
         <h1 className="text-[3em] md:text-[5em] lg:text-[7em] leading-[0.9] font-silka font-medium uppercase text-center tracking-tight">
           <span className="block">80 Years Designing Homes</span>
           <span className="block">That Speak About You</span>
@@ -41,18 +41,18 @@ export default function Hero() {
       </div>
 
       {/* Pagination */}
-      <div className="absolute bottom-[45px] left-[35px] z-20 flex gap-[10px]">
+      <div className="absolute bottom-11.25 left-8.75 z-20 flex gap-2.5">
         {[0, 1, 2].map((index) => (
           <button
             key={index}
             onClick={() => setCurrentSlide(index)}
-            className={`h-[3px] transition-all duration-300 ${index === currentSlide ? 'bg-primary-white opacity-100' : 'bg-primary-white opacity-30 hover:opacity-60'} w-[80px]`}
+            className={`h-0.75 transition-all duration-300 ${index === currentSlide ? 'bg-primary-white opacity-100' : 'bg-primary-white opacity-30 hover:opacity-60'} w-20`}
             aria-label={`Go to slide ${index + 1}`}
           />
         ))}
       </div>
 
-      <div className="absolute bottom-[45px] left-1/2 -translate-x-1/2 text-sm uppercase font-silka font-semibold tracking-widest animate-bounce cursor-pointer z-20">
+      <div className="absolute bottom-11.25 left-1/2 -translate-x-1/2 text-sm uppercase font-silka font-semibold tracking-widest animate-bounce cursor-pointer z-20">
         Scroll Down
       </div>
     </section>

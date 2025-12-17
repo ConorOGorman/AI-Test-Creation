@@ -32,8 +32,8 @@ export default function KitchensPage() {
         />
         <div className="absolute inset-0 bg-black/20" />
 
-        <div className="relative z-10 mx-auto flex h-full w-full max-w-[1500px] flex-col items-center justify-center px-[35px] text-center">
-          <div className="grid gap-[35px]">
+        <div className="relative z-10 mx-auto flex h-full w-full max-w-375 flex-col items-center justify-center px-8.75 text-center">
+          <div className="grid gap-8.75">
             <h1 className="text-[3em] leading-[0.9] tracking-tight md:text-[5em] lg:text-[7em]">
               <span className="block uppercase">The heart and soul</span>
               <span className="block uppercase">
@@ -46,19 +46,19 @@ export default function KitchensPage() {
           </div>
         </div>
 
-        <div className="absolute bottom-[45px] left-1/2 z-10 -translate-x-1/2 text-sm font-semibold uppercase tracking-widest">
+        <div className="absolute bottom-11.25 left-1/2 z-10 -translate-x-1/2 text-sm font-semibold uppercase tracking-widest">
           Scroll Down
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1500px] px-[35px] py-[45px]">
+      <section className="mx-auto max-w-375 px-8.75 py-11.25">
         <h2 className="text-[2.25em] uppercase leading-[1.05] md:text-[3em] lg:text-[3.75em]">
           Experts in <i className="font-normal">kitchens</i> since 1945.
         </h2>
       </section>
 
-      <section className="mx-auto max-w-[1500px] px-[35px] pb-[45px]">
-        <p className="max-w-[980px] text-[1.1em] leading-relaxed">
+      <section className="mx-auto max-w-375 px-8.75 pb-11.25">
+        <p className="max-w-245 text-[1.1em] leading-relaxed">
           <span>
             We are passionate about our work. That is why we never tire of
             exploring how we live and enjoy the spaces within our home…
@@ -70,8 +70,8 @@ export default function KitchensPage() {
         </p>
       </section>
 
-      <section className="mx-auto max-w-[1500px] px-[35px] pb-[45px]">
-        <div className="grid gap-[35px] lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
+      <section className="mx-auto max-w-375 px-8.75 pb-11.25">
+        <div className="grid gap-8.75 lg:grid-cols-[1.25fr_0.75fr] lg:items-start">
           <div className="relative overflow-hidden">
             <img
               src="https://api.espaciohomedesign.com/uploads/xlarge_Espacio_Home_Pollensa_49_1x_1_1_0285f9b617.jpg"
@@ -87,14 +87,14 @@ export default function KitchensPage() {
         </div>
       </section>
 
-      <section className="mx-auto max-w-[1500px] px-[35px] py-[45px]">
+      <section className="mx-auto max-w-375 px-8.75 py-11.25">
         <h2 className="text-center text-[2.25em] uppercase leading-[1.05] md:text-[3em] lg:text-[3.75em]">
           We create moments to <i className="font-normal">share.</i>
         </h2>
       </section>
 
-      <section className="mx-auto max-w-[1500px] px-[35px] pb-[70px]">
-        <div className="flex snap-x snap-mandatory gap-[35px] overflow-x-auto pb-[15px]">
+      <section className="mx-auto max-w-375 px-8.75 pb-17.5">
+        <div className="flex snap-x snap-mandatory gap-8.75 overflow-x-auto pb-3.75">
           {galleryImages.map((img) => (
             <figure
               key={img.src}
@@ -108,7 +108,7 @@ export default function KitchensPage() {
                   loading="lazy"
                 />
               </div>
-              <figcaption className="mt-[10px] text-xs font-semibold uppercase tracking-widest text-gray-600">
+              <figcaption className="mt-2.5 text-xs font-semibold uppercase tracking-widest text-gray-600">
                 {img.caption}
               </figcaption>
             </figure>
@@ -121,4 +121,3 @@ export default function KitchensPage() {
     </main>
   );
 }
-

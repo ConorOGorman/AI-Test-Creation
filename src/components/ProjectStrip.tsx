@@ -12,16 +12,16 @@ const projects = [
 
 export default function ProjectStrip() {
   return (
-    <section className="py-[45px] overflow-hidden">
-      <div className="flex overflow-x-auto gap-[35px] px-[35px] pb-8 scrollbar-hide snap-x snap-mandatory">
+    <section className="py-11.25 overflow-hidden">
+      <div className="flex overflow-x-auto gap-8.75 px-8.75 pb-8 scrollbar-hide snap-x snap-mandatory">
         {projects.map((project, index) => (
-          <div key={index} className="flex-shrink-0 w-[300px] group cursor-pointer snap-center">
-            <div className="relative overflow-hidden mb-4 h-[420px]">
+          <div key={index} className="shrink-0 w-75 group cursor-pointer snap-center">
+            <div className="relative overflow-hidden mb-4 h-105">
               <Image 
                 src={project.image} 
                 alt={project.title} 
                 fill
-                className="object-cover transition-transform duration-[0.6s] ease-[cubic-bezier(0,0,0.26,1)] group-hover:scale-110"
+                className="object-cover transition-transform duration-600 ease-[cubic-bezier(0,0,0.26,1)] group-hover:scale-110"
                 sizes="300px"
               />
             </div>

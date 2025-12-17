@@ -25,11 +25,11 @@ const newsItems = [
 
 export default function NewsSection() {
   return (
-    <section className="py-[45px] px-[35px] max-w-[1500px] mx-auto layout-bloque-noticias">
-      <div className="flex flex-col gap-[50px]">
+    <section className="py-11.25 px-8.75 max-w-375 mx-auto layout-bloque-noticias">
+      <div className="flex flex-col gap-12.5">
         {newsItems.map((item, index) => (
-          <div key={index} className="layout-noticia-item group cursor-pointer grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-[20px] items-center">
-            <div className="relative overflow-hidden aspect-[16/9] img-content">
+          <div key={index} className="layout-noticia-item group cursor-pointer grid grid-cols-1 md:grid-cols-[1fr_1.5fr] gap-5 items-center">
+            <div className="relative overflow-hidden aspect-video img-content">
               <Image 
                 src={item.image} 
                 alt={item.title} 
